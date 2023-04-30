@@ -1,0 +1,34 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>ChallengeOne v1.1</title>
+
+ </head>
+ <body>
+  
+    <h1> ChallengeOne v1.1</h1>
+        <div class="container">
+               <!--Area de escritura-->
+               <textarea id="mensaje" cols="28" rows="5" placeholder="Ingresa texto aqui" pattern="[a-z ]*" oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')"></textarea>
+                <!--Area de resultado-->
+               <textarea id="mensajeResult" cols="28" rows="5" pattern="[a-z ]*" oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')"></textarea>
+               <!--boton de encriptar-->  
+               <button id="btnEncript" class="encriptar">Encripta</button>
+               <!--boton de Desencriptar-->  
+               <button id="btnDesEncript" class="Desencriptar">Desencripta</button>
+               <!--boton de copiar-->                  
+               <button id="btnCopiar" class="copiar">Copiar</button>
+        </div>    
+    
+        <script src="script.js"></script>
+      
+ </body>
+ </html>
